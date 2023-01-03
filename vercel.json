@@ -1,0 +1,17 @@
+{
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/a", "destination": "/about" },
+    { "source": "/p/:id", "destination": "/products/:id" },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nuxt-vercel-example-product.vercel.app"
+        }
+      ],
+      "destination": "/products"
+    }
+  ]
+}
